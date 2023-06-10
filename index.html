@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=cabin:400,500,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Application</title>
+  </head>
+  <body class="vertical-center">
+    <main>
+      <header>
+        <h1>Minijuego JavaScript</h1>
+        <p>Adivina el numero generado del 1 al 10</p>
+      </header>
+
+      <section class="vertical-center">
+        <div class="result-container">
+          <p>El número era: <span id="numero-generado"></span></p>
+        </div>
+
+        <form class="form-container vertical-center">
+          <label for="input-usuario">Introduce un numero</label>
+          <input
+            type="text"
+            name="input-usuario"
+            id="input-usuario"
+            minlength="1"
+            maxlength="2"
+            pattern="[0-9]{1,2}"
+            autocomplete="off"
+            required
+          />
+        </form>
+
+        <div>
+          <button type="button" id="btn-comprobar">Adivinar</button>
+          <button type="button" id="btn-intentar">
+            <i class="fa-sharp fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+    
+    <script src="main.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/73843a4163.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

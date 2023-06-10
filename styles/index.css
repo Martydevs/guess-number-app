@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  font-family: "Cabin", sans-serif;
+  background-color: #254e74;
+  background-image: linear-gradient(180deg, #254e74 25%, #b19d1d 100%);
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+main {
+  width: min(65ch, 100% - 4rem);
+  margin-inline: auto;
+}
+
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin: 1rem 0 1rem 0;
+  width: auto;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: yellow;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+form {
+  margin: 1rem 0 1rem 0;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #153e61;
+  color: yellow;
+  text-align: center;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#btn-comprobar:disabled {
+  background-color: #000;
+  color: #fff;
+  cursor: not-allowed;
+}
