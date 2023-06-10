@@ -70,6 +70,12 @@ p {
   color: #fff;
 }
 
+label {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
 form {
   margin: 1rem 0 1rem 0;
 }
